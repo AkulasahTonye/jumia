@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    font-family:  'Roboto,-apple-system,BlinkMacSystemFont',"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f1f1f1;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns:1fr, 3fr,1fr;
+}
+.length{
+    height: 100px;
+} 
+.top-nav .content  {
+    max-width: 750px;
+}
+.top-nav .container .content .first-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav .container .content .first-nav .circle {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #f68b1e;
+}
+.top-nav .container .content .first-nav > div a {
+    color:#f68b1e;
+    text-decoration: none;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+.top-nav .container .content .first-nav > div a:hover {
+    border-bottom: 1px solid #f68b1e;
+}
+.top-nav .container .content .first-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.top-nav .container .content .first-nav ul li  a{
+    padding: 10px;
+    color: #d3d1d1;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+.top-nav .container .content .first-nav ul li  a:hover {
+    color: #f68b1e;
+}
+.search {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    height: 70px;
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    z-index: 100;
+}
+.search .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search .container img {
+    width: 16%;
+    height: 55px;
+    margin-right: 65px;
+    margin-top: 10px;
+}
+.form-control {
+    width: 750px;
+}
+input:not([type='submit']) {
+    width: 80%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+.form-control .submit {
+    padding: 10px;
+    border-radius: 3px;
+    background: #f68b1e;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+    margin-left: 10px;
+}
+.form-control .submit:hover {
+    opacity: 0.8;
+} 
+
+.search .container > div {
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.search .container > div a:hover {
+    color: #f68b1e;
+}
+.showcase {
+    margin-top: 20px;
+}
+.showcase .container .grid-3{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    height: 380px;
+}
+.jumia{
+    width: 40px;
+}
